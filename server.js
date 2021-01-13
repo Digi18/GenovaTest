@@ -5,7 +5,7 @@ const port = process.env.PORT || 3000;
 
 app.use(require('./routes/fetchData'));
 
-app.get('/',() => {
+app.get('/',(req,res) => {
 
     res.end("Hello there");
 });
