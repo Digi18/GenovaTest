@@ -5,6 +5,11 @@ const port = process.env.PORT || 3000;
 
 app.use(require('./routes/fetchData'));
 
+app.get('/',() => {
+
+    res.end("Hello there");
+});
+
 app.listen(port,(req,res) => {
 
     console.log(`App is running at ${port}`);
