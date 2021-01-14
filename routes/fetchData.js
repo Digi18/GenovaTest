@@ -20,7 +20,7 @@ router.get('/products',(req,res) => {
                     console.log("Error",err);
                 }
                 else{
-                    output = result.map(r => ({'name':r.name,'price':r.price,
+                    output = result.map(r => ({'_id':r._id,'name':r.name,'price':r.price,
                              'product_image':r.product_image}));
 
                     res.json(output);
