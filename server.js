@@ -7,7 +7,7 @@ app.use(require('./routes/fetchData'));
 
 app.get('/',(req,res) => {
 
-    res.end("Hello");
+    re.end("Hello");
 });
 
 app.listen(port,(req,res) => {
